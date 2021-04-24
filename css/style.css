@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito+Sans:wght@600&family=Raleway:wght@600&display=swap');
+#logo-img{
+display:inline;
+}
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  overflow: auto;
+}
+.header {
+  overflow: hidden;
+  background-color: #ffffff;
+ padding: 20px 10px;
+  width: 100%;
+  top:0;
+  
+}
+.nav{
+  float: right;
+  padding-top:16px;
+  font-size:20px;
+  font-family: 'Josefin sans' , sans-serif;
+  margin-right:38vw;
+  padding-bottom: 10px;
+}
+.nav-li{
+  padding-right:20px;
+  padding-left:20px;
+  color: #4D4D4D;
+  cursor: pointer;
+}
+.nav-li:hover{
+  color: #0b7fdf;
+}
+.header-line{
+  padding: 2px 20px;
+  width: 100%;
+  
+  background-image: linear-gradient(to right , #FF8A08 , #FFFA28);
+}
+.heroku{
+  color: #4D4D4D;
+  text-decoration: none;
+  padding-top: 5px;
+  font-size: 18px;
+}
+.heroku:hover{
+  color: #0b7fdf;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 600px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Hero-text hero-image";
+}
+.card-wrapper{
+  padding-left: 160px;
+  /* margin-top: 10px; */
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 200px;
+  gap: 30px;
+  grid-template-areas: "build deploy execute";
+}
+
+.build{
+grid-area: build;
+text-align: center;
+font-family: 'Josefin sans', sans-serif;
+color: #4D4D4D;
+padding-top: 10px;
+}
+.deploy{
+grid-area: deploy;
+text-align: center;
+font-family: 'Josefin sans', sans-serif;
+color: #4D4D4D;
+padding-top: 10px;
+}
+.execute{
+grid-area: execute;
+text-align: center;
+font-family: 'Josefin sans', sans-serif;
+color: #4D4D4D;
+padding-top: 10px;
+}
+.Hero-text { 
+  grid-area: Hero-text;
+ }
+ .Hero-text-wrapper{
+   padding-top:120px;
+   padding-left: 30px;
+ }
+ .Hero-text h3{
+   font-size: 30px;
+   font-weight: 400;
+   color: rgb(44, 44, 44);
+   font-family: 'Josefin sans', sans-serif;
+ }
+ .hero-img-content{
+   padding-left:140px;
+ }
+ .blog-wrapper{
+   padding:20px 10px;
+   background-color: rgb(255, 255, 255);
+   border-radius: 7px;
+   box-shadow: 5px 10px 8px 10px #ffffffd2;
+ }
+ .Hero-text-wrapper p{
+   font-size: 18px;
+  font-family: 'Josefin sans', sans-serif;
+}
+button.hero-button {
+  border-radius: 7px;
+  padding: 1rem;
+  font-family: 'Josefin sans', sans-serif;
+  font-size: 1rem;
+  padding: .5rem 3rem;
+  color: black;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #FF8A08,#FF8A08,#FF8A08, #FFFA28);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+}
+
+button.hero-button:hover {
+  box-shadow: none;
+  color: white;
+  background-color: orange;
+}
+.hero-image { grid-area: hero-image; }
+.wrapper-content{
+  width: 260px;
+  height: auto;
+}
+.blog-header{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+.footer-content{
+  width: 100%;
+  border-width: 2px;
+  height: 140px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+.footer-line{
+  width: 100%;
+  height:1px;
+  background-color: #a5a5a5;
+}
+.float-left-footer{
+  float: left;
+  padding-left: 40px;
+  font-family: 'Josefin sans', sans-serif;
+  color: #494949;
+}
+.float-center-footer{
+  float: right;
+  padding-right: 120px;
+  font-family: 'Josefin sans', sans-serif;
+  color: #494949;
+}
+.float-center-footer a{
+  font-size: 20px;
+}
+.float-left-footer a{
+ font-size: 20px;
+}
+.float-center-footer a:hover{
+  color: #0b7fdf;
+}
+.float-left-footer a:hover{
+  color: #0b7fdf;
+}
+.experience-wrapper{
+  width: 100%;
+  background-image:linear-gradient(to right , #FF8A08 ,#FF8A08 ,#FF8A08 , #FFFA28);
+  text-align: center;
+  margin-top: 120px;
+  height:200px;
+}
+.fire-footer-name{
+  font-family: 'Josefin sans', sans-serif;
+}
+.experience-wrapper h3{
+  font-family: 'Raleway' , sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  color: #fff;
+  padding-top: 40px;
+}
+.footer-end-line{
+  background-image:linear-gradient(to right , #FF8A08 ,#FF8A08 ,#FF8A08 , #FFFA28);
+  height: 3px;
+  width: 100%; 
+}
+.footer-copyright{
+  float:right;
+  padding-right:20px;
+  font-family: 'Josefin sans', sans-serif;
+  font-size: 16px;
+}
