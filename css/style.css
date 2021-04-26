@@ -11,7 +11,7 @@ body {
 .header {
   overflow: hidden;
   background-color: #ffffff;
- padding: 20px 10px;
+ padding:10px 10px;
   width: 100%;
   top:0;
   
@@ -21,14 +21,21 @@ body {
   padding-top:16px;
   font-size:20px;
   font-family: 'Josefin sans' , sans-serif;
-  margin-right:38vw;
   padding-bottom: 10px;
+}
+.nav-center
+{
+  margin-right:38vw;
+}
+.nav-right{
+  margin-right: 20px;
 }
 .nav-li{
   padding-right:20px;
   padding-left:20px;
   color: #4D4D4D;
   cursor: pointer;
+  text-decoration: none;
 }
 .nav-li:hover{
   color: #0b7fdf;
@@ -36,7 +43,7 @@ body {
 .header-line{
   padding: 2px 20px;
   width: 100%;
-  
+  margin-top:10px;
   background-image: linear-gradient(to right , #FF8A08 , #FFFA28);
 }
 .heroku{
@@ -138,7 +145,7 @@ button.hero-button:hover {
   width: 260px;
   height: auto;
 }
-.blog-header{
+.card-wrapper-header{
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -183,7 +190,7 @@ button.hero-button:hover {
   width: 100%;
   background-image:linear-gradient(to right , #FF8A08 ,#FF8A08 ,#FF8A08 , #FFFA28);
   text-align: center;
-  margin-top: 120px;
+  margin-top: 150px;
   height:200px;
 }
 .fire-footer-name{
@@ -199,11 +206,64 @@ button.hero-button:hover {
 .footer-end-line{
   background-image:linear-gradient(to right , #FF8A08 ,#FF8A08 ,#FF8A08 , #FFFA28);
   height: 3px;
+  margin-top: 10px;
   width: 100%; 
 }
 .footer-copyright{
   float:right;
   padding-right:20px;
+  padding-top: 5px;
   font-family: 'Josefin sans', sans-serif;
   font-size: 16px;
 }
+.nav-burger{
+  display: none;
+  float:right;
+  margin-right: 10px;
+}
+.mobile-menu{
+  width: 100%;
+  padding:20px 10px;
+  background-color: #ffffff;
+  text-align: center;
+  display: none;
+}
+.mobile-menu-nav-li{
+  font-family: 'Josefin sans', sans-serif;
+  font-size: 16px;
+  background: -webkit-linear-gradient( #FF8A08 ,#FF8A08 ,#FF8A08 , #FFFA28);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mobile-menu-nav-li-close{
+  float:right;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-li{
+    display: none;
+  }
+  .nav-burger{
+    display: block;
+  }
+  .mobile-menu{
+    display: block;
+  }
+}
+.blog-header{
+  font-size: 42px;
+  margin-left:470px;
+  color: #6b6b6b;
+  font-family: 'Raleway', sans-serif;
+}
+.blog-text{
+  margin-left: 238px;
+  color: #494949;
+  font-family: 'Josefin sans' , sans-serif;
+  font-size: 16px;
+  margin-right: 272px;
+}
+#popup { display: none; position: fixed; top: 12%; left: 15%; width: 70%; height: 70%; background-color: white; z-index: 10; border-radius: 7px;}
+#popup iframe { width: 100%; height: 100%; border: 0; }
+#popupdarkbg { position: fixed; z-index: 5; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden; background-color: rgba(0,0,0,.75); display: none; }
