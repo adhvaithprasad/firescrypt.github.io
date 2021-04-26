@@ -3,7 +3,9 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 <title>Firescrypt</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 <!--header-->
@@ -11,10 +13,13 @@
 <img src="Images/logo.png" width="auto" height="40px"/>
 <!--nav-->
 <div class="nav">
-<a class="nav-li">Home</a>
-<a class="nav-li">Go to studio</a>
-<a class="nav-li">Discuss</a>
+<div class="nav-center">
+  <a class="nav-li" href="index.html">Home</a>
+  <a class="nav-li" href="studio/index.html">Studio</a>
+  <a class="nav-li" href="#">Discuss</a>
 </div>
+</div>
+
 <!--nav end-->
 <!--header line start-->
 <div class="header-line"></div><!--header line end-->
@@ -25,7 +30,7 @@
 <div class="grid-container">
     <div class="Hero-text">
         <div class="Hero-text-wrapper">
-            <h3>Firescrypt is a library to deploy HTML programs in embeddable devices</h3>
+            <h3>Firescrypt is a open-source library to deploy HTML programs in embeddable devices</h3>
             <p>Program with the web,leverage the web,deploy in the web,improve the web </p>
             <br>
             <button class="hero-button">See tutorial ></button>
@@ -37,7 +42,7 @@
 </div>
 <!--hero end-->
 <!--Steps start-->
-<h1 class="blog-header">How to do it</h1>
+<h1 class="card-wrapper-header">How to do it</h1>
 <div class="cards">
   <div class="card-wrapper">
       <div class="build">
@@ -62,30 +67,30 @@
 </div>  
 <!--steps end-->
 <!--blog card start-->
-<br><br><br><br><br><br><br><br><h1 class="blog-header">Blogs and news</h1><br>
+<br><br><br><br><br><br><br><br><h1 class="card-wrapper-header">Blogs and news</h1><br>
 <div class="cards">
   <div class="card-wrapper">
       <div class="build">
         <div class="blog-wrapper">
           <img src="Images/build.png" width="100%" height="auto" class="wrapper-content"/>
-          <h3>Build</h3>
-          <p>Build your program using HTML</p>
+          <h3>Why ?</h3>
+          <p>Why use firescrypt ?</p>
           <button class="hero-button">Read the blog ></button> 
      </div>
         </div>
-      <div class="deploy">
-        <div class="blog-wrapper">
-          <img src="Images/build.png" width="100%" height="auto" class="wrapper-content"/>
-          <h3>Build</h3>
-          <p>Build your program using HTML</p>
-          <button class="hero-button">Read the blog ></button> 
-     </div>
-    </div>
+        <div class="deploy">
+          <div class="blog-wrapper">
+            <img src="Images/what.png" width="40%" height="auto" class="wrapper-content"/>
+            <h3>What ?</h3>
+            <p>What is firescrypt ? what's the idea ?</p>
+            <button class="hero-button" onclick="location.href='blog.html';">Read the blog ></button> 
+       </div>
+      </div>
       <div class="execute">
     <div class="blog-wrapper">
         <img src="Images/build.png" width="100%" height="auto" class="wrapper-content"/>
-        <h3>Build</h3>
-        <p>Build your program using HTML</p>
+        <h3>Real life objectives???</h3>
+        <p>I got no idea about this blog ??</p>
         <button class="hero-button">Read the blog ></button> 
    </div>
       </div>
@@ -97,7 +102,9 @@
 <section id="exeperience">
   <div class="experience-wrapper">
     <h3><b>Experience Firescrypt</h3></b></h3>
-    <button class="hero-button">Experience now ></button> 
+    <button class="hero-button"id="link">Experience now ></button> 
+    <div id="popup"><iframe id="popupiframe"></iframe></div>
+<div id="popupdarkbg"></div>
   </div>
 </section>
 <!--footer content start-->
