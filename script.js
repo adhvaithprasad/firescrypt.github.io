@@ -1,5 +1,5 @@
 var i = 0;
-var txt = '( ^ ~ ^ ) !!';
+var txt = 'IoT for  everyone   (^ Δ ^)';
 var speed = 170;
 function typeWriter() {
   if (i < txt.length) {
@@ -28,3 +28,14 @@ function typeWriter() {
       document.documentElement.setAttribute("data-theme", switchToTheme);
     }
   });
+ function myFunction(x) {
+  if (x.matches) { // If media query matches
+    alert('Tilt you phone for a better experience');
+  } else {
+   
+  }
+}
+
+var x = window.matchMedia("(max-width: 311px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
