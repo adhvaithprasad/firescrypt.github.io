@@ -8,6 +8,16 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
+var v = 0;
+var txt1 = 'Firestudio';
+var speed1 = 170;
+function studio() {
+  if (v < txt1.length) {
+    document.getElementById("demo-studio").innerHTML += txt1.charAt(v);
+    v++;
+    setTimeout(studio, speed1);
+  }
+}
 // Wait for document to load
   document.addEventListener("DOMContentLoaded", function(event) {
     document.documentElement.setAttribute("data-theme", "light");
