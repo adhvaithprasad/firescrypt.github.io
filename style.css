@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=DM+Sans&family=Josefin+Sans:wght@500&family=Lato&family=Open+Sans:wght@600&family=Poppins:ital,wght@1,600&family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=DM+Sans&family=Josefin+Sans:wght@500&family=Lato&family=Open+Sans:wght@600&family=Poppins:wght@1,600&family=Quicksand:wght@700&display=swap');
 a{
   color: dodgerblue;
 }
@@ -332,6 +332,7 @@ padding-top: 40px;
 }
 #footer{
   width: 100%;
+  margin-top: 80px;
   background:var(--theme-ui-header-background);
 }
 .content-1 {
@@ -362,8 +363,8 @@ padding-top: 40px;
     "content-4";
 }}
 .footer-grid-container a{
-   font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
+   font-family: 'Josefin-sans', sans-serif;
+  font-size: 17px;
   color: var(--theme-ui-text-red);
   
 }
@@ -372,7 +373,24 @@ padding-top: 40px;
 }
 .footer-grid-container p{
   color:var(--theme-ui-footer);
-  font-size: 15px;
+  font-size: 22px;
   font-weight: 600;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Josefin sans', sans-serif;
+}
+#image{
+  width:auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--theme-ui-background-2);
+}
+#image img{
+  border-radius: 5px;
+}
+#image h1{
+  font-family: 'Josefin sans', sans-serif;
+  font-weight: 300;
+  color: var(--theme-ui-footer);
 }
