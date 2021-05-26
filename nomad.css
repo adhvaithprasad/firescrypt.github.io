@@ -1,0 +1,72 @@
+@import url('fonts/style.css');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+:root{
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  max-height: 100vh;
+  --font-1:font-family: 'Josefin Sans', sans-serif;
+  --product-b:font-family: 'Product Sans Bold' , sans-serif;
+  --product-r:font-family: 'Product Sans Regular' , sans-serif;
+  --bg-1:#ffffff;
+  --bg-2:#073042;
+  --bg-3:#3ddc84 ;
+  --text-1:#807e7e ;
+  --text-1-hover:#000000 ;
+  --text-3:#185abc;
+  --text-4:#ffffff;
+}
+body{
+margin: 0;
+height: 100vh;
+width: 100vw;
+font-family: var(--font-1);
+}
+.topnav{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-color: var(--bg-1);
+}
+.logo{
+  float: left;
+  display: block;
+  text-decoration: none;
+  padding: 14px 30px 3px;
+}
+.nav-tab{
+  float: left;
+  font-weight: 400;
+  display: block;
+  color: var(--text-1);
+  text-align: center;
+  padding: 14px 28px;
+  margin-left: 7px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.topnav .icon{
+  display: none;
+  color: black;
+}
+.hero-image{
+  background-color: var(--bg-3);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text{
+text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-3);
+}
+.hero-text h1{
+  font-family:'Product Sans Bold';
+  font-weight:normal;
+  font-size:43px;
+}
