@@ -96,6 +96,7 @@ body {
 }
 .hero-image {
   background:linear-gradient(225deg,#fa0505,#fa9005,#fcd305);
+  
   padding:200px 0px;
   background-position: center;
   background-repeat: no-repeat;
@@ -110,7 +111,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #ffffff;
+  color: #0a0101;
 }
 
 .hero-text h1{
@@ -171,10 +172,10 @@ body {
 .grid-4{
  background:linear-gradient(225deg, #1623A6 0%, #3343D4 29%, #175EAC 73%, #176682 100%); 
 } 
-.grid-5{
+/*.grid-5{
   background: linear-gradient(to right top, #194189 0%, #3B4980 25%, #8738A7 100%);
 }
-/*.grid-1:hover{
+.grid-1:hover{
  
   background: #073042;
 }
@@ -256,7 +257,8 @@ border-radius: 17px;
   grid-area: studio-div;
   color: white; 
   padding-top: 10px;
-  padding-bottom: 10px;}
+  padding-bottom: 10px;
+  background-image: url(wp2215193-google-pixel-2-wallpapers.png);}
 
   .studio-div h2{
     padding-top: 5px;
@@ -268,12 +270,13 @@ border-radius: 17px;
   font-weight: 500;
   padding-top: 100px;
   padding-bottom: 3px;
-  
+  color: black;
 }
 
 .firestudio h2{
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
+  color: black;
 }
 .btn{
   text-decoration: none;
