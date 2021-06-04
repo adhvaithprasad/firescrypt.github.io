@@ -81,15 +81,7 @@ body {
     "show"
     "show2" !important;
 }
- .grid-container-2 {
-  gap:10px;
-  grid-template-columns: 1fr  !important;
-  grid-template-rows: 300px 300px !important;
-  padding:10px;
-  grid-template-areas:
-    "show3"
-    "show4" !important;
-}
+
 
 
 }
@@ -167,42 +159,7 @@ body {
 .show h2{
   font-family: 'Product Sans Bold' , sans-serif;
 }
-.grid-container-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px;
-  padding:10px;
-   gap:10px;
-  grid-template-areas:
-    "show3 show4";
-}
 
-.show3 { 
-  text-align: center;
-  color: rgb(255, 255, 255);
-  grid-area: show; 
-  background: #073042;
-  }
-
-.show4 { 
-  text-align: center;
-  color: white;
-  grid-area: show2; 
-  background: #185abc;
-  }
-.show3 h1{
-  font-family: 'Product Sans Regular' , sans-serif;
-}
-.show4 h1{
-  font-family: 'Product Sans Regular' , sans-serif;
-}
-
-.show3 h2{
-  font-family: 'Product Sans Bold' , sans-serif;
-}
-.show4 h2{
-  font-family: 'Product Sans Bold' , sans-serif;
-}
 .experience{
 width: 100%;
 background-color: #3ddc84;
