@@ -87,7 +87,7 @@ body {
 }
 .hero-image {
   background-color: #3ddc84;
-  height: 50%;
+  padding:200px 0px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
