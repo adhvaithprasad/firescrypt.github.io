@@ -47,7 +47,7 @@ body {
  }
   
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -55,7 +55,7 @@ body {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -72,14 +72,23 @@ body {
     display: block;
     text-align: center;
   }
-  .grid-container {
-  
+.grid-container {
+  gap:10px;
   grid-template-columns: 1fr  !important;
   grid-template-rows: 300px 300px !important;
-  
+  padding:10px;
   grid-template-areas:
     "show"
     "show2" !important;
+}
+ .grid-container-2 {
+  gap:10px;
+  grid-template-columns: 1fr  !important;
+  grid-template-rows: 300px 300px !important;
+  padding:10px;
+  grid-template-areas:
+    "show3"
+    "show4" !important;
 }
 
 
@@ -126,7 +135,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 300px;
-  
+  padding:10px;
+   gap:10px;
   grid-template-areas:
     "show show2";
 }
@@ -155,6 +165,42 @@ body {
   font-family: 'Product Sans Bold' , sans-serif;
 }
 .show h2{
+  font-family: 'Product Sans Bold' , sans-serif;
+}
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px;
+  padding:10px;
+   gap:10px;
+  grid-template-areas:
+    "show3 show4";
+}
+
+.show3 { 
+  text-align: center;
+  color: rgb(255, 255, 255);
+  grid-area: show; 
+  background: #073042;
+  }
+
+.show4 { 
+  text-align: center;
+  color: white;
+  grid-area: show2; 
+  background: #185abc;
+  }
+.show3 h1{
+  font-family: 'Product Sans Regular' , sans-serif;
+}
+.show4 h1{
+  font-family: 'Product Sans Regular' , sans-serif;
+}
+
+.show3 h2{
+  font-family: 'Product Sans Bold' , sans-serif;
+}
+.show4 h2{
   font-family: 'Product Sans Bold' , sans-serif;
 }
 .experience{
