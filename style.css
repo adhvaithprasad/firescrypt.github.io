@@ -147,17 +147,17 @@ body {
   background: #073042;
   }
 
-.grid-1{
-
+.grid-1:hover{
+ background:linear-gradient(60deg,#f52a3e,#b52afa,#6728fa);
 }
-.grid-2{
-
+.grid-2:hover{
+background:linear-gradient(215deg, #c52d47 0%, #a5325c 30%, #8b366d 100%);
 }
-.grid-3{
-
+.grid-3:hover{
+background:linear-gradient(50deg,#cc27f5,#9025fa,#252cfa);
 }
-.grid-4{
-
+.grid-4:hover{
+background:linear-gradient(225deg, #1623A6 0%, #3343D4 29%, #175EAC 73%, #176682 100%);
 }
 .show h1{
   font-family: 'Product Sans Regular' , sans-serif;
