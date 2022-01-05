@@ -1,9 +1,373 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title> Library firescrypt </title>
-  </head>
-  <body>
-    <h1>Hi this is firescrypt Library page this is properaitory </h1>
-  </body>
+<!DOCtype html>
+<html>
+
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js">
+
+	</script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js">
+
+	</script>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js">
+
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js">
+
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js">
+
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js">
+
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js">
+
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js">
+
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.0/beautify.js">
+
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.0/beautify-css.js">
+
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.0/beautify-html.js">
+
+	</script>
+	<link rel="stylesheet" href="https://firepad.io/releases/v1.5.9/firepad.css" />
+	<script src="https://firepad.io/releases/v1.5.9/firepad.min.js">
+
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.27.0/min/vs/loader.min.js" integrity="sha512-SExj71Cw3B9C9EE8BC/ad3AKia5zQXDj/2SM4THgkeKh5GIFZhKM/R3uclUG8YZwJrjcVhydAlIHmfNvsBCKZA=="
+	 crossorigin="anonymous" referrerpolicy="no-referrer">
+
+	</script>
+
+
+	<link rel="stylesheet" href="https://firescrypt.github.io/style/body.css">
+	<link rel="stylesheet" href="https://firescrypt.github.io/style/btn.css">
+	<link rel="stylesheet" href="https://firescrypt.github.io/style/create-modal.css">
+	<link rel="stylesheet" href="https://firescrypt.github.io/style/dropdown.css">
+	<link rel="stylesheet" href="https://firescrypt.github.io/style/editor.css">
+	<link rel="stylesheet" href="https://firescrypt.github.io/style/import.css">
+	<link rel="stylesheet" href="https://firescrypt.github.io/style/mdc-tab.css">
+	<link rel="stylesheet" href="https://firescrypt.github.io/style/monaco-editor.css">
+	<link rel="stylesheet" href="https://firescrypt.github.io/style/nav.css">
+	<link rel="stylesheet" href="https://firescrypt.github.io/style/project.css">
+	<link rel="stylesheet" href="https://firescrypt.github.io/style/root.css">
+	<link rel="stylesheet" href="https://firescrypt.github.io/style/snackbar.css">
+	<link rel="stylesheet" href="https://firescrypt.github.io/style/terminal-close.css">
+	<link rel="stylesheet" href="https://firescrypt.github.io/style/toggle.css">
+	<link rel="stylesheet" href="https://firescrypt.github.io/style/user.css">
+	<link rel="stylesheet" href="https://firescrypt.github.io/style/commit.css">
+	<link rel="stylesheet" href="https://firescrypt.github.io/style/searchbox.css">
+
+
+
+</head>
+
+<body>
+
+
+	<div class="dashboard--main">
+		<div class="chat-content" style="flex: 1;">
+     <header>
+       <div class="header-left-sided">
+       	<div class="searchbox">
+<input type="text" id="search-editor">
+<i class="mdc__button-icon material-icons" onclick="find_initial()">search</i>
+
+</div>
+	
+  <div style="display:flex;">  
+<div class="dashboard-tab-bar mdc-tab-bar" role="tablist">
+  <div class="mdc-tab-scroller">
+    <div class="mdc-tab-scroller__scroll-area">
+      <div class="mdc-tab-scroller__scroll-content">
+        <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+          <span class="mdc-tab__content">
+            <span class="mdc-tab__text-label">Develop</span>
+          </span>
+          <span class="mdc-tab-indicator mdc-tab-indicator--active">
+            <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+          </span>
+          <span class="mdc-tab__ripple"></span>
+        </button>
+        <button class="mdc-tab mdc-tab" role="tab" aria-selected="true" tabindex="0">
+          <span class="mdc-tab__content">
+            <span class="mdc-tab__text-label">Manage</span>
+          </span>
+          <span class="mdc-tab-indicator mdc-tab-indicator">
+            <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+          </span>
+          <span class="mdc-tab__ripple"></span>
+        </button>
+        <button class="mdc-tab mdc-tab" role="tab" aria-selected="true" tabindex="0">
+          <span class="mdc-tab__content">
+            <span class="mdc-tab__text-label">Teams</span>
+          </span>
+          <span class="mdc-tab-indicator mdc-tab-indicator">
+            <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+          </span>
+          <span class="mdc-tab__ripple"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+
+</div>
+
+    <div class="user"> 
+      <i class="mdc__button-icon material-icons" onclick="create()">add</i>
+			<img id="user-img" />
+			<!-- <p id="user-name"></p> -->
+		</div>
+     </header>
+	<div class="content content--active" id="project">
+
+
+
+  </div>
+
+
+
+<div class="content">
+<p>manage</p>
+
+  
+		</div>
+
+<div class="content">
+
+<p>teams</p>
+  
+		</div>
+
+
+
+	</div>
+
+
+
+
+	</div>
+	<div class="main--editor">
+		<main id="user_div" class="loggedin-div">
+			<header>
+
+<div class="searchbox">
+<input type="text" id="search-editor">
+<i class="mdc__button-icon material-icons" onclick="find_initial()">search</i>
+
+</div>
+
+<div class="igrp">
+   <!-- add icons here -->
+</div>
+
+      </header>
+      <div class="commit" id="commit">
+        <div class="absolute">
+<h2 style="display:flex;justify-content:space-evenly;align-items:center;">changes   <i class="material-icons mdc-button__icon k j" aria-hidden="true" title="close" onclick="close_commit_pane()"> close </i></h2>
+
+
+<textarea name="" id="commit-message" cols="30" rows="10"></textarea>
+
+<br>
+<button class="mdc-button mdc-button--raised open"  style=" background: transparent; color: white !important; border: 1px solid grey; justify-content:center;" onclick="commit()"id="commit-button">commit</button>
+</div>
+
+
+
+      </div>
+			<div class="mdc-dialog luck-2" role="alertdialog" aria-modal="true" aria-labelledby="my-dialog-title" aria-describedby="my-dialog-content" id="hick">
+				<div class="mdc-dialog__container">
+					<div class="mdc-dialog__surface">
+						<h2 class="mdc-dialog__title" id="my-dialog-title"><b> Firestudio </b></h2>
+						<div class="mdc-dialog__content" id="my-dialog-content">firestudio is a Cloud based (C9) editor for developing HTML applications. Firestudio strictly adheres to google's material design guidelines. Firestudio has a very powerful UI making it easy to develop applications for beginners as well as powerful features for experienced developers.Firestudio is a client side editor ie: firestudio does not collect any user data.
+							<br>
+							<br>
+							<h2 class="mdc-dialog__title" id="my-dialog-title"><b> Keyboard shortcuts ⌨️ </b></h2> 
+							<br>
+							<br> <b>Tip : </b> Click on the editor once before using the Shortcuts in case of errors
+							<br>
+							<br>Settings pallette : <b>Ctrl</b> + <b> ,</b> 
+							<br>Find and replace : <b>Ctrl</b> + <b>F</b> 
+							<br>To lowercase : <b>Ctrl</b> + <b>Shift</b> + <b> U</b> 
+							<br>Undo : <b>Ctrl</b> + <b>Z</b> 
+							<br>Redo : <b>Ctrl</b> + <b>Shift</b> + <b> Z </b> 
+							<br>Go to line : <b>Ctrl</b> + <b>L</b> 
+							<br>Comment : <b>Ctrl</b> + <b>/ </b> 
+							<br>
+						</div>
+						<footer class="mdc-dialog__actions">
+							<button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">Close</button>
+						</footer>
+					</div>
+				</div>
+				<div class="mdc-dialog__scrim"></div>
+			</div>
+			<div class="many">
+				<div class="nav"><i class="material-icons mdc-button__icon run-icon" aria-hidden="true" title="menu" onclick="run()" id="run" style="margin-top:8px;"> play_arrow </i><i class="material-icons mdc-button__icon" aria-hidden="true" title="menu" onclick="find()"> search </i><i class="material-icons mdc-button__icon" aria-hidden="true" title="menu" onclick="r()"> file_download </i><i class="material-icons mdc-button__icon" aria-hidden="true" title="menu" onclick="beautify()"> flare </i><i class="material-icons mdc-button__icon" aria-hidden="true" title="menu" onclick="f('.luck-2')"> help_center </i>  <i class="material-icons mdc-button__icon" aria-hidden="true" title="menu" onclick="open_commit_pane()"> commit </i> 
+					<img src="" alt="" id="user-image-editor">
+				</div>
+				<div id="firepad-container">
+					<div class="svelte5" style="flex:1;">
+						<div class="mdc-tab-bar-1" role="tablist">
+							<div class="mdc-tab-scroller">
+								<div class="mdc-tab-scroller__scroll-area mdc-tab-scroller__scroll-area--scroll" style="margin-bottom: 0px;">
+									<div class="mdc-tab-scroller__scroll-content">
+										<div class="jkl">
+											<button class="mdc-tab mdc-ripple-upgraded" role="tab" aria-selected="false" tabindex="-1" id="mdc-tab-1" style="--mdc-ripple-fg-size:392px; --mdc-ripple-fg-scale:1.69833; --mdc-ripple-fg-translate-start:293px, -178.5px; --mdc-ripple-fg-translate-end:130.992px, -172px;"> <span class="mdc-tab__content"> <span class="mdc-tab__text-label">Bash</span> </span> <span class="mdc-tab-indicator"> <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline" style=""></span> </span> <span class="mdc-tab__ripple"></span> 
+											</button>
+											<button class="mdc-tab mdc-ripple-upgraded mdc-tab--active" role="tab" aria-selected="true" tabindex="0" id="mdc-tab-2" style="--mdc-ripple-fg-size:427px; --mdc-ripple-fg-scale:1.69472; --mdc-ripple-fg-translate-start:-9.48438px, -188px; --mdc-ripple-fg-translate-end:142.516px, -189.5px;"> <span class="mdc-tab__content"> <span class="mdc-tab__text-label">compile output</span> </span> <span class="mdc-tab-indicator mdc-tab-indicator--active"> <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline" style=""></span> </span> <span class="mdc-tab__ripple"></span> 
+											</button>
+
+
+										</div>
+										<div class="icon-group"> <i class="material-icons mdc-button__icon k t" aria-hidden="true" title="menu" onclick="increase()"> expand_less </i>  <i class="material-icons mdc-button__icon k j" aria-hidden="true" title="menu" onclick="rm()"> close </i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-1 ">
+							<div class="mzist">
+							<textarea readonly="" id="bash" style="flex:10;"></textarea>
+                	<textarea id="bash-input" spellcheck="false" style="flex:2;padding:4px;background:#394256;" placeholder="Press enter or click 'Run bash' to execute bash code "></textarea>
+							</div>
+						</div>
+						<div class="content-1 content--active-1" >
+							<div class="mzist">
+								<textarea readonly="" id="output" style="flex:10;"></textarea>
+                	<textarea id="input" spellcheck="false" style="flex:2;padding:4px;background:#394256;" placeholder="Program input"></textarea>
+							</div>
+						</div>
+					</div>
+         
+				</div>
+         <div class="editor-footer" >
+           <select name="language" id="lanuage">
+ <option value="45" mode="UNKNOWN">Assembly (NASM 2.14.02)</option> 
+<option value="46" mode="shell">Bash (5.0.0)</option>
+<option value="47" mode="UNKNOWN">Basic (FBC 1.07.1)</option> 
+<option value="1011" mode="UNKNOWN">Bosque (latest)</option> 
+<option value="75" mode="c">C (Clang 7.0.1)</option>
+<option value="1013" mode="c">C (Clang 9.0.1)</option>
+<option value="1001" mode="c">C (Clang 10.0.1)</option>
+<option value="48" mode="c">C (GCC 7.4.0)</option>
+<option value="49" mode="c">C (GCC 8.3.0)</option>
+<option value="50" mode="c">C (GCC 9.2.0)</option>
+<option value="51" mode="csharp">C# (Mono 6.6.0.161)</option>
+<option value="1022" mode="csharp">C# (Mono 6.10.0.104)</option>
+<option value="1021" mode="csharp">C# (.NET Core SDK 3.1.302)</option>
+<option value="1023" mode="csharp">C# Test (.NET Core SDK 3.1.302, NUnit 3.12.0)</option>
+<option value="76" mode="cpp">C++ (Clang 7.0.1)</option>
+<option value="1014" mode="<div class="mdc-tab-bar kanban-tab-bar" role="tablist">
+  <div class="mdc-tab-scroller">
+…  <p>teams</p>
+</div>cpp">C++ (Clang 9.0.1)</option>
+<option value="1002" mode="cpp">C++ (Clang 10.0.1)</option>
+<option value="52" mode="cpp">C++ (GCC 7.4.0)</option>
+<option value="53" mode="cpp">C++ (GCC 8.3.0)</option>
+<option value="54" mode="cpp">C++ (GCC 9.2.0)</option>
+<option value="1015" mode="cpp">C++ Test (Clang 10.0.1, Google Test 1.8.1)</option>
+<option value="1012" mode="cpp">C++ Test (GCC 8.4.0, Google Test 1.8.1)</option>
+<option value="1003" mode="c">C3 (latest)</option> 
+<option value="86" mode="clojure">Clojure (1.10.1)</option>
+<option value="77" mode="UNKNOWN">COBOL (GnuCOBOL 2.2)</option> 
+<option value="55" mode="UNKNOWN">Common Lisp (SBCL 2.0.0)</option> 
+<option value="56" mode="UNKNOWN">D (DMD 2.089.1)</option> 
+<option value="57" mode="UNKNOWN">Elixir (1.9.4)</option> 
+<option value="58" mode="UNKNOWN">Erlang (OTP 22.2)</option> 
+<option value="44" mode="plaintext">Executable</option>
+<option value="87" mode="fsharp">F# (.NET Core SDK 3.1.202)</option>
+<option value="1024" mode="fsharp">F# (.NET Core SDK 3.1.302)</option>
+<option value="59" mode="UNKNOWN">Fortran (GFortran 9.2.0)</option> 
+<option value="60" mode="go">Go (1.13.5)</option>
+<option value="88" mode="UNKNOWN">Groovy (3.0.3)</option> 
+<option value="61" mode="UNKNOWN">Haskell (GHC 8.8.1)</option> 
+<option value="62" mode="java">Java (OpenJDK 13.0.1)</option>
+<option value="1004" mode="java">Java (OpenJDK 14.0.1)</option>
+<option value="1005" mode="java">Java Test (OpenJDK 14.0.1, JUnit Platform Console Standalone 1.6.2)</option><div class="mdc-tab-bar kanban-tab-bar" role="tablist">
+  <div class="mdc-tab-scroller">
+…  <p>teams</p>
+</div>
+<option value="63" mode="javascript">JavaScript (Node.js 12.14.0)</option>
+<option value="78" mode="kotlin">Kotlin (1.3.70)</option>
+<option value="64" mode="lua">Lua (5.3.5)</option>
+<option value="1006" mode="c">MPI (OpenRTE 3.1.3) with C (GCC 8.3.0)</option>
+<option value="1007" mode="cpp">MPI (OpenRTE 3.1.3) with C++ (GCC 8.3.0)</option>
+<option value="1008" mode="python">MPI (OpenRTE 3.1.3) with Python (3.7.3)</option>
+<option value="1009" mode="python">Nim (stable)</option> 
+<option value="79" mode="objective-c">Objective-C (Clang 7.0.1)</option>
+<option value="65" mode="UNKNOWN">OCaml (4.09.0)</option> 
+<option value="66" mode="UNKNOWN">Octave (5.1.0)</option> 
+<option value="67" mode="pascal">Pascal (FPC 3.0.4)</option>
+<option value="85" mode="perl">Perl (5.28.1)</option>
+<option value="68" mode="php">PHP (7.4.1)</option>
+<option value="43" mode="plaintext">Plain Text</option>
+<option value="69" mode="UNKNOWN">Prolog (GNU Prolog 1.4.5)</option> 
+<option value="70" mode="python">Python (2.7.17)</option>
+<option value="71" mode="python">Python (3.8.1)</option>
+<option value="1010" mode="python">Python for ML (3.7.3)</option>
+<option value="80" mode="r">R (4.0.0)</option>
+<option value="72" mode="ruby">Ruby (2.7.0)</option>
+<option value="73" mode="rust">Rust (1.40.0)</option>
+<option value="81" mode="UNKNOWN">Scala (2.13.2)</option> 
+<option value="82" mode="sql">SQL (SQLite 3.27.2)</option>
+<option value="83" mode="swift">Swift (5.2.3)var kanbanBar1 = new mdc.tabBar.MDCTabBar(document.querySelector('.kanban-tab-bar'));
+// var contentEls1 = document.querySelectorAll('.kanban-content');
+// kanbanBar1.listen('MDCTabBar:activated', function(event) {
+//   // Hide currently-active content
+//   document.querySelector('.kanban-content--active').classList.remove('kanban-content--active');
+//   // Show content for newly-activated tab
+//   contentEls1[event.detail.index].classList.add('kanban-content--active');
+// });
+</option>
+<option value="74" mode="typescript">TypeScript (3.7.4)</option>
+<option value="84" mode="vb">Visual Basic.Net (vbnc 0.0.0.5943)</option> 
+</select>
+         </div>
+			</div>
+      
+			<div id="snackbar">
+				<p id="snackbar-text"></p>
+			</div>
+		</main>
+	</div>
+
+
+
+	<script src="https://firescrypt.github.io/scripts/config.js"></script>
+	<script src="https://firescrypt.github.io/scripts/auth-check-true.js"></script>
+	<script src="https://firescrypt.github.io/scripts/auth.js"></script>
+	<script src="https://firescrypt.github.io/scripts/beautify.js"></script>
+  
+	<script src="https://firescrypt.github.io/scripts/create.js"></script>
+	<script src="https://firescrypt.github.io/scripts/find.js"></script>
+	<script src="https://firescrypt.github.io/scripts/getref.js"></script>
+ 
+	<script src="https://firescrypt.github.io/scripts/init.js"></script>
+	<script src="https://firescrypt.github.io/scripts/modal.js"></script>
+
+	<script src="https://firescrypt.github.io/scripts/terminal.js"></script>
+
+<script src="https://firescrypt.github.io/scripts/searchbox.js"></script>
+
+
+
+  
+</body>
+
 </html>
