@@ -1,0 +1,56 @@
+.main--editor #snackbar {
+  visibility: hidden;
+ min-width: 170px;
+    margin-left: -125px;
+    background-color: #333;
+  
+    text-align: center;
+    border-radius: 2px;
+
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+ padding: 20px;
+    color: var(--mdc-theme-primary);
+    right: 8%;
+    font-weight: 500;
+    bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.main--editor #snackbar p{
+  display: flex;
+    align-items: center;
+    margin: 0;
+}
+.main--editor #snackbar img{
+  height: 40px;
+    margin-left: 10px;
+}
+.main--editor #snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}

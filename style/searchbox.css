@@ -1,0 +1,21 @@
+.searchbox{
+  color: white;
+    width: 40%;
+    padding: 5px;
+    display: flex;
+    height: 50%;
+    font-family: 'Source Code Pro', monospace;
+    border-radius: 5px;
+    align-items: center;
+    background: #1f1f2b;
+}
+.searchbox input{
+  color: white;
+   font-family: 'Source Code Pro', monospace;
+      width: calc(100% - 10%);
+    margin-right: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 100%;
+}

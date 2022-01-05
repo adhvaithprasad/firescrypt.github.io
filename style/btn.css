@@ -1,0 +1,36 @@
+.mdc-button{
+   font-family: 'Poppins' ,sans-serif;
+  display: flex;
+  justify-content: flex-end;
+}
+.open{
+  color: rgb(48, 48, 48) !important;
+}
+.delete{
+  background: #ff4040 !important;
+  margin-left: 40px;
+}
+
+.new-button-group{
+  display: flex;
+    justify-content: center;
+}
+.btn-grp{
+  display: flex;
+}
+/* logout */
+.logout{
+      width: fit-content;
+    padding: 10px 50px;
+    /* bottom: 0; */
+    margin-top: 40px;
+    cursor: pointer;
+    background: #ff4040;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    letter-spacing: 2px;
+    font-weight: 900;
+}

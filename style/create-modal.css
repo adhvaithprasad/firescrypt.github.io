@@ -1,0 +1,59 @@
+.create .mdc-dialog__surface{
+  width: 200%;
+  height: 80%;
+}
+.create .mdc-dialog__surface .mdc-dialog__title{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.create .mdc-dialog__surface{
+  background: #172135;
+  color: white;
+}
+.create textarea{
+  border: none;
+  outline: none;
+}
+.create .mdc-dialog__surface .mdc-dialog__title{
+  color: white;
+}
+.create .mdc-dialog__surface .mdc-dialog__title select{
+padding: 10px;
+border-radius: 10px;
+background: #e6e6e673;
+/* border:4px solid rgb(117, 180, 253) ; */
+margin: 10px;
+border: none;
+outline: none;
+}
+.create .mdc-dialog__surface .mdc-dialog__title select:focus-within{
+border:4px solid rgb(117, 180, 253) ; 
+}
+
+.create .mdc-dialog__surface .mdc-dialog__content input{
+height: 40px;
+    margin-left: 10px;
+    padding: 0px 10px;
+    background: transparent !important;
+    border-bottom: 2px solid rgba(245, 245, 245, 0.733);
+    /* background: none; */
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(245, 245, 245);
+}
+
+.create .mdc-dialog__surface .mdc-dialog__content #language-details{
+  width: 80%;
+    height: 60%;
+    border-radius: 5px;
+    background: transparent;
+    padding: 10px;
+    border: 2px solid rgba(245, 245, 245, 0.425);
+    color: rgba(245, 245, 245);
+}

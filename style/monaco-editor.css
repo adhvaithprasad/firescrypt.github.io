@@ -1,0 +1,10 @@
+.monaco-editor .margin{
+  background: var(--prima-nocta) !important;
+}
+.monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input{
+  background-color: var(--prima-nocta) !important;
+}
+.minimap-decorations-layer{
+  background: #0f16259c;
+}
+.main--editor .monaco-editor .inputarea { position: fixed !important; top: 0 !important; left: 0 !important; }

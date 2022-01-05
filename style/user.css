@@ -1,0 +1,85 @@
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#user-img{
+width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    /* flex: 1; */
+    border-radius: 50%;
+}
+#user-image-create{
+
+width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    /* flex: 1; */
+    border-radius: 50%;
+
+}
+#user-name{
+    /* flex: 1; */
+    /* width: 20px; */
+    text-align: center;
+    padding: 4px;
+    /* margin-left: 20px; */
+    /* font-size: 15px; */
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+ 
+}
+
+
+
+/* editor */
+.main--editor .user-info{
+  display: flex;
+  align-items: center;
+
+}
+.main--editor .user-info img{
+  width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.main--editor .user-info i{
+  color: white;
+}
+.main--editor #username-editor{
+  margin-left: 10px;
+  padding: 5px;
+  cursor: pointer;
+  margin-right:10px;
+  display: flex;
+  align-items: center; 
+}
+.main--editor #username-editor:hover{
+  background: rgb(29, 29, 29);
+  border-radius: 5px;
+}
+.main--editor #user-image{
+      width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+#user-image-editor{
+  position: absolute;
+  bottom: 20px;
+  border-radius: 50%;
+  width: 40px;
+}
+.user i{
+  margin-right: 16px;
+   padding: 8px;
+  color: white;
+}
+.user i:hover{
+ border-radius: 50%;
+ background: rgba(128, 128, 128, 0.657);
+}
