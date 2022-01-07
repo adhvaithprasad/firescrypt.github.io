@@ -43,7 +43,9 @@ function rm(){
 }
 
 // actual apifolders
-
+          function encode(str) {
+            return btoa(unescape(encodeURIComponent(str || "")));
+        }
 
         function decode(bytes) {
             var escaped = escape(atob(bytes || ""));
