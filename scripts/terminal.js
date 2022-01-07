@@ -1,28 +1,3 @@
- var language_to_id = {
-            "C#": 51,
-            "C++": 54,
-            "Java": 62,
-            "Python": 71,
-            "Ruby": 72,
-            "Clojure":86,
-            "Nodejs":63,
-            "Lua":64,
-            "Go":60,
-            "Swift":83,
-            "SQL":82,
-            "R":80,
-            "Scala":81,
-            "Typescript":74,
-            "Haskell":61,
-            "Elixir":57,
-            "F#":87,
-            "Perl":85,
-            "Rust":73,
-            "Prolog":69,
-        };
-
-
-
 // increase and decrease of terminal and related DOM styles.
 function increase(){
   var x = document.querySelector(".svelte5");
@@ -39,11 +14,10 @@ t.innerHTML="expand_more"
 
 function rm(){
   document.querySelector(".svelte5").style.display="none";
-  document.querySelector(".editor-footer").style.zIndex = "10";
 }
 
-// actual apifolders
-          function encode(str) {
+// actual api
+ function encode(str) {
             return btoa(unescape(encodeURIComponent(str || "")));
         }
 
@@ -111,7 +85,7 @@ tabBar.listen('MDCTabBar:activated', function (event) {
                  y.style.display="block";
             document.getElementById("run").innerHTML="stop";
             $("#output").val("> Creating submission... suppose you have inputs don't forget to enter it in compile input ");
-document.querySelector(".editor-footer").style.zIndex = "0";
+
             let encodedExpectedOutput = encode($("#expout").val());
             if (encodedExpectedOutput === "") {
                 encodedExpectedOutput = null; // Assume that user does not want to use expected output if it is empty.
@@ -126,7 +100,7 @@ document.querySelector(".editor-footer").style.zIndex = "0";
 	                "x-rapidapi-key": API_KEY
                 },
                 data: JSON.stringify({
-                    "language_id": $("#language").val() ,
+                    "language_id": 70,
                     // language_to_id[$("#lang").val()]
                     "source_code": encode(window.editor.getValue()),
                     "stdin": encode($("#input").val()),
