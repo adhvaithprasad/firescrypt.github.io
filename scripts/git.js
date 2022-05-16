@@ -22,6 +22,7 @@ window.addEventListener('hashchange', function() {
       const mainThread = {
     
         async progress(evt) {
+        console.log(evt);
           $("progress-txt").textContent = evt.phase;
           $("progress").value = evt.total ? evt.loaded / evt.total : 0.5;
           return;
