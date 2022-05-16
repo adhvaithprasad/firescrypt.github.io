@@ -9,56 +9,8 @@
   right: 0%;
   color: white;
   background: var(--prima-nocta-darker);
-  display: none;
+
   flex-direction: column;
   padding: 10px;
   border-radius: 10px;
-}
-.commit-radio-grp{
-  display: flex;
-  align-items: center;
-}
-.commit textarea{
-  border-radius: 5px;
-  outline: none;
-  color: white;
-  background: none;
-  padding: 10px;
-  border: 1px solid rgba(128, 128, 128, 0.507);
-}
-.inner-wrapper{
-  padding: 10px;
-  margin: 5px;
-  border-radius: 10px;
-   border: 1px solid rgba(128, 128, 128, 0.507);
-}
-.line{
-  width: 2px;
-  height: 35px;
-  margin-left: 40px;
-  background: white;
-}
-.commit .circle{
-  width: 20px;
-  height: 20px;
-  margin-left: 31px;
-  border: 1px solid white;
-  border-radius: 50%;
-}
-.commit .circle:hover{
-  background: white;
-}
-.revert{
-  margin-left: 20px;
-    padding: 10px;
-    background: transparent;
-    outline: none;
-    border: 2px solid #ff6682;
-    border-radius: 40px;
-    color: #fa5252;
-    font-weight: 600;
-}
-.revert:hover{
-  background: #fa5252;
-  color: white;
 }
