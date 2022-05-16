@@ -52,9 +52,7 @@ window.addEventListener('hashchange', function() {
     
         let branches = await workerThread.listBranches({ remote: "origin" });
         
-    branches.forEach(branch => 
-    $("branches").innerHTML +=  `<option value='${branch}'>${branch}</option>`      
-    );
+
     
     
       var obj={"files":{}}  
@@ -79,7 +77,7 @@ window.addEventListener('hashchange', function() {
     
         
     files.forEach(file => 
-    $("file").innerHTML +=  `<div  class="file-container" onclick="window.location.hash='${file}'">
+    $("commit").innerHTML +=  `<div  class="file-container" onclick="window.location.hash='${file}'">
     <img src="${image + file.split('.')[file.split('.').length -1]+'.svg'}" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/PKief/vscode-material-icon-theme@master/icons/file.svg';"
     />
     ${file}</div>`      
@@ -88,12 +86,7 @@ window.addEventListener('hashchange', function() {
     
         
         let commits = await workerThread.log({});
-        // $("log").textContent +=
-        //   "LOG:\n" +
-        //   commits
-        //     .map(c => `  ${c.oid.slice(0, 7)}: ${c.commit.message}`)
-        //     .join("\n") +
-        //   "\n";
+        
         
         commits.forEach(commit => 
     console.log(commit)  
@@ -108,11 +101,7 @@ window.addEventListener('hashchange', function() {
     }
     }
     );
-    // commits.forEach(commit => 
-    
-    // $("commits").innerHTML +=  `<div class="file-container" ><a>${commit.oid.slice(0, 7)}
-    // </a><a>${commit.commit.author.name}</a><p>${new Date(commit.commit.author.timestamp * 1000) }</p>${commit.commit.message}</div>`      
-    // );
+
     
          var hash = window.location.hash.replace(/#/g, '');
     read(hash)
@@ -158,13 +147,9 @@ window.addEventListener('hashchange', function() {
       (async () => {
         const workerThread = await portal.get("workerThread");
     
-        // $("log").textContent += "ready\n";
+
         $("repository").value = "firescrypt/node-git-backend";
-        $("repository").addEventListener("keydown", e => {
-          if (e.key === "Enter") {
-            doCloneAndStuff();
-          }
-        });
+       
     
     
        
