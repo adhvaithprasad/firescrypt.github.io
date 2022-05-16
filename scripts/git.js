@@ -1,18 +1,3 @@
-//     $(document).ready(function(){
-// const pathes = ["path1/subpath1/file1.doc", "path1/subpath1/file2.doc", "path1/subpath2/file1.doc", "path1/subpath2/file2.doc", "path2/subpath1/file1.doc", "path2/subpath1/file2.doc", "path2/subpath2/file1.doc", "path2/subpath2/file2.doc", "path2/subpath2/additionalpath1/file1.doc"];
-//    const result = pathes.reduce((r, path) => {
-//         path.split('/').reduce((nodes, text) => {
-//             let child = nodes.find(n => n.text === text);
-//             if (!child) nodes.push(child = { text, nodes: [] });
-//             return child.nodes;
-//         }, r);
-//         return r;
-//     }, []);
-// console.log(result);
-//         $('#myTree').treeview({
-//             data: result
-//         });
-//     });
 
 
 
